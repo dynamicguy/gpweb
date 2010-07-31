@@ -1,3 +1,4 @@
 /gp/cache/*
 /gp/logs/*
 /nbproject/*
+/catalog.xml
