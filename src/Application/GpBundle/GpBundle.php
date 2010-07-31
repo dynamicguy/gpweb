@@ -5,7 +5,7 @@ namespace Application\GpBundle;
 use Symfony\Foundation\Bundle\Bundle;
 use Symfony\Components\DependencyInjection\ContainerInterface;
 use Symfony\Components\DependencyInjection\Loader\Loader;
-use Bundle\UserBundle\DependencyInjection\UserExtension;
+use Application\GpBundle\DependencyInjection\GpExtension;
 
 class GpBundle extends Bundle
 {
@@ -14,6 +14,5 @@ class GpBundle extends Bundle
     {
         Loader::registerExtension(new GpExtension());
     }
-
 
 }

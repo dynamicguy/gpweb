@@ -549,7 +549,7 @@ class gpDevDebugProjectContainer extends Container
     {
         if (isset($this->shared['validator.mapping.loader.xml_files_loader'])) return $this->shared['validator.mapping.loader.xml_files_loader'];
 
-        $instance = new Symfony\Components\Validator\Mapping\Loader\XmlFilesLoader(array(0 => '/home/dynamicguy/public_html/gp/src/vendor/symfony/src/Symfony/Framework/FoundationBundle/DependencyInjection/../../../Components/Form/Resources/config/validation.xml'));
+        $instance = new Symfony\Components\Validator\Mapping\Loader\XmlFilesLoader(array(0 => '/home/dynamicguy/public_html/gpweb/src/vendor/symfony/src/Symfony/Framework/FoundationBundle/DependencyInjection/../../../Components/Form/Resources/config/validation.xml'));
         $this->shared['validator.mapping.loader.xml_files_loader'] = $instance;
 
         return $instance;
@@ -1801,16 +1801,16 @@ class gpDevDebugProjectContainer extends Container
     protected function getDefaultParameters()
     {
         return array(
-            'kernel.root_dir' => '/home/dynamicguy/public_html/gp/gp',
+            'kernel.root_dir' => '/home/dynamicguy/public_html/gpweb/gp',
             'kernel.environment' => 'dev',
             'kernel.debug' => true,
             'kernel.name' => 'gp',
-            'kernel.cache_dir' => '/home/dynamicguy/public_html/gp/gp/cache/dev',
-            'kernel.logs_dir' => '/home/dynamicguy/public_html/gp/gp/logs',
+            'kernel.cache_dir' => '/home/dynamicguy/public_html/gpweb/gp/cache/dev',
+            'kernel.logs_dir' => '/home/dynamicguy/public_html/gpweb/gp/logs',
             'kernel.bundle_dirs' => array(
-                'Application' => '/home/dynamicguy/public_html/gp/gp/../src/Application',
-                'Bundle' => '/home/dynamicguy/public_html/gp/gp/../src/Bundle',
-                'Symfony\\Framework' => '/home/dynamicguy/public_html/gp/gp/../src/vendor/symfony/src/Symfony/Framework',
+                'Application' => '/home/dynamicguy/public_html/gpweb/gp/../src/Application',
+                'Bundle' => '/home/dynamicguy/public_html/gpweb/gp/../src/Bundle',
+                'Symfony\\Framework' => '/home/dynamicguy/public_html/gpweb/gp/../src/vendor/symfony/src/Symfony/Framework',
             ),
             'kernel.bundles' => array(
                 0 => 'Symfony\\Foundation\\Bundle\\KernelBundle',
@@ -1825,16 +1825,16 @@ class gpDevDebugProjectContainer extends Container
             ),
             'kernel.charset' => 'UTF-8',
             'templating.loader.filesystem.path' => array(
-                0 => '/home/dynamicguy/public_html/gp/gp/views/%bundle%/%controller%/%name%%format%.%renderer%',
-                1 => '/home/dynamicguy/public_html/gp/gp/../src/Application/%bundle%/Resources/views/%controller%/%name%%format%.%renderer%',
-                2 => '/home/dynamicguy/public_html/gp/gp/../src/Bundle/%bundle%/Resources/views/%controller%/%name%%format%.%renderer%',
-                3 => '/home/dynamicguy/public_html/gp/gp/../src/vendor/symfony/src/Symfony/Framework/%bundle%/Resources/views/%controller%/%name%%format%.%renderer%',
+                0 => '/home/dynamicguy/public_html/gpweb/gp/views/%bundle%/%controller%/%name%%format%.%renderer%',
+                1 => '/home/dynamicguy/public_html/gpweb/gp/../src/Application/%bundle%/Resources/views/%controller%/%name%%format%.%renderer%',
+                2 => '/home/dynamicguy/public_html/gpweb/gp/../src/Bundle/%bundle%/Resources/views/%controller%/%name%%format%.%renderer%',
+                3 => '/home/dynamicguy/public_html/gpweb/gp/../src/vendor/symfony/src/Symfony/Framework/%bundle%/Resources/views/%controller%/%name%%format%.%renderer%',
             ),
             'doctrine.orm.metadata_driver.mapping_dirs' => array(
 
             ),
             'doctrine.orm.entity_dirs' => array(
-                0 => '/home/dynamicguy/public_html/gp/src/Bundle/UserBundle/Entities',
+                0 => '/home/dynamicguy/public_html/gpweb/src/Bundle/UserBundle/Entities',
             ),
             'event_dispatcher.class' => 'Symfony\\Foundation\\EventDispatcher',
             'http_kernel.class' => 'Symfony\\Components\\HttpKernel\\HttpKernel',
@@ -1904,8 +1904,8 @@ class gpDevDebugProjectContainer extends Container
             'validator.mapping.loader.yaml_files_loader.class' => 'Symfony\\Components\\Validator\\Mapping\\Loader\\YamlFilesLoader',
             'validator.mapping.loader.static_method_loader.method_name' => 'loadValidatorMetadata',
             'validator.message_interpolator.files' => array(
-                0 => '/home/dynamicguy/public_html/gp/src/vendor/symfony/src/Symfony/Framework/FoundationBundle/DependencyInjection/../../../Components/Validator/Resources/i18n/messages.en.xml',
-                1 => '/home/dynamicguy/public_html/gp/src/vendor/symfony/src/Symfony/Framework/FoundationBundle/DependencyInjection/../../../Components/Form/Resources/i18n/messages.en.xml',
+                0 => '/home/dynamicguy/public_html/gpweb/src/vendor/symfony/src/Symfony/Framework/FoundationBundle/DependencyInjection/../../../Components/Validator/Resources/i18n/messages.en.xml',
+                1 => '/home/dynamicguy/public_html/gpweb/src/vendor/symfony/src/Symfony/Framework/FoundationBundle/DependencyInjection/../../../Components/Form/Resources/i18n/messages.en.xml',
             ),
             'templating.engine.class' => 'Symfony\\Framework\\FoundationBundle\\Templating\\Engine',
             'templating.loader.filesystem.class' => 'Symfony\\Components\\Templating\\Loader\\FilesystemLoader',
@@ -1923,7 +1923,7 @@ class gpDevDebugProjectContainer extends Container
             'templating.assets.version' => NULL,
             'profiler.class' => 'Symfony\\Framework\\FoundationBundle\\Profiler',
             'profiler.storage.class' => 'Symfony\\Components\\HttpKernel\\Profiler\\ProfilerStorage',
-            'profiler.storage.file' => '/home/dynamicguy/public_html/gp/gp/cache/dev/profiler.db',
+            'profiler.storage.file' => '/home/dynamicguy/public_html/gpweb/gp/cache/dev/profiler.db',
             'profiler.storage.lifetime' => 86400,
             'profiling.class' => 'Symfony\\Components\\HttpKernel\\Listener\\Profiling',
             'data_collector.config.class' => 'Symfony\\Framework\\FoundationBundle\\DataCollector\\ConfigDataCollector',
@@ -1936,7 +1936,7 @@ class gpDevDebugProjectContainer extends Container
             'twig.options' => array(
                 'charset' => 'UTF-8',
                 'debug' => true,
-                'cache' => '/home/dynamicguy/public_html/gp/gp/cache/dev/twig',
+                'cache' => '/home/dynamicguy/public_html/gpweb/gp/cache/dev/twig',
                 'auto_reload' => true,
             ),
             'twig.loader.class' => 'Symfony\\Framework\\TwigBundle\\Loader\\Loader',
@@ -1954,7 +1954,7 @@ class gpDevDebugProjectContainer extends Container
             'zend.formatter.filesystem.class' => 'Zend\\Log\\Formatter\\Simple',
             'zend.formatter.filesystem.format' => '%timestamp% %priorityName%: %message%
 ',
-            'zend.logger.path' => '/home/dynamicguy/public_html/gp/gp/logs/dev.log',
+            'zend.logger.path' => '/home/dynamicguy/public_html/gpweb/gp/logs/dev.log',
         );
     }
 }

@@ -7282,3 +7282,64 @@
 2010-07-31T21:03:11+06:00 DEBUG: Notifying (filter) event "core.response" to listener "(Symfony\Components\HttpKernel\Listener\ResponseFilter, filter)"
 2010-07-31T21:03:11+06:00 DEBUG: Notifying (filter) event "core.response" to listener "(Symfony\Components\HttpKernel\Listener\Profiling, handle)"
 2010-07-31T21:03:11+06:00 DEBUG: Notifying (filter) event "core.response" to listener "(Symfony\Components\HttpKernel\Listener\WebDebugToolbar, handle)"
+2010-07-31T21:38:53+06:00 ERR: Unable to read the profiler information.
+2010-07-31T21:38:53+06:00 DEBUG: Notifying (until) event "core.request" to listener "(Symfony\Framework\FoundationBundle\Listener\RequestParser, resolve)"
+2010-07-31T21:38:53+06:00 INFO: Matched route "homepage" (parameters: array (  '_controller' => 'GpBundle:Gp:index',  '_route' => 'homepage',))
+2010-07-31T21:38:53+06:00 DEBUG: Notifying (until) event "core.load_controller" to listener "(Symfony\Framework\FoundationBundle\Listener\ControllerLoader, resolve)"
+2010-07-31T21:38:53+06:00 INFO: Using controller "Application\GpBundle\Controller\GpController::indexAction"
+2010-07-31T21:38:53+06:00 DEBUG: Listener "(Symfony\Framework\FoundationBundle\Listener\ControllerLoader, resolve)" processed the event "core.load_controller"
+2010-07-31T21:38:53+06:00 INFO: Loaded template file "/home/dynamicguy/public_html/gpweb/gp/../src/Application/GpBundle/Resources/views/Gp/index.php" (renderer: php)
+2010-07-31T21:38:53+06:00 INFO: Loaded template file "/home/dynamicguy/public_html/gpweb/gp/../src/Application/GpBundle/Resources/views//layout.php" (renderer: php)
+2010-07-31T21:38:53+06:00 INFO: Loaded template file "/home/dynamicguy/public_html/gpweb/gp/../src/Application/GpBundle/Resources/views/Gp/header.php" (renderer: php)
+2010-07-31T21:38:53+06:00 INFO: Loaded template file "/home/dynamicguy/public_html/gpweb/gp/../src/Application/GpBundle/Resources/views/Gp/messages.php" (renderer: php)
+2010-07-31T21:38:53+06:00 INFO: Loaded template file "/home/dynamicguy/public_html/gpweb/gp/../src/Application/GpBundle/Resources/views/Gp/footer.php" (renderer: php)
+2010-07-31T21:38:53+06:00 INFO: Loaded template file "/home/dynamicguy/public_html/gpweb/gp/../src/Application/GpBundle/Resources/views//javascriptConfig.php" (renderer: php)
+2010-07-31T21:38:53+06:00 DEBUG: Notifying (filter) event "core.response" to listener "(Symfony\Components\HttpKernel\Listener\EsiFilter, filter)"
+2010-07-31T21:38:53+06:00 DEBUG: Notifying (filter) event "core.response" to listener "(Symfony\Components\HttpKernel\Listener\ResponseFilter, filter)"
+2010-07-31T21:38:53+06:00 DEBUG: Notifying (filter) event "core.response" to listener "(Symfony\Components\HttpKernel\Listener\Profiling, handle)"
+2010-07-31T21:38:53+06:00 DEBUG: Notifying (filter) event "core.response" to listener "(Symfony\Components\HttpKernel\Listener\WebDebugToolbar, handle)"
+2010-07-31T21:38:56+06:00 DEBUG: Notifying (until) event "core.request" to listener "(Symfony\Framework\FoundationBundle\Listener\RequestParser, resolve)"
+2010-07-31T21:38:56+06:00 INFO: Matched route "homepage" (parameters: array (  '_controller' => 'GpBundle:Gp:index',  '_route' => 'homepage',))
+2010-07-31T21:38:56+06:00 DEBUG: Notifying (until) event "core.load_controller" to listener "(Symfony\Framework\FoundationBundle\Listener\ControllerLoader, resolve)"
+2010-07-31T21:38:56+06:00 INFO: Using controller "Application\GpBundle\Controller\GpController::indexAction"
+2010-07-31T21:38:56+06:00 DEBUG: Listener "(Symfony\Framework\FoundationBundle\Listener\ControllerLoader, resolve)" processed the event "core.load_controller"
+2010-07-31T21:38:56+06:00 INFO: Loaded template file "/home/dynamicguy/public_html/gpweb/gp/../src/Application/GpBundle/Resources/views/Gp/index.php" (renderer: php)
+2010-07-31T21:38:56+06:00 INFO: Loaded template file "/home/dynamicguy/public_html/gpweb/gp/../src/Application/GpBundle/Resources/views//layout.php" (renderer: php)
+2010-07-31T21:38:56+06:00 INFO: Loaded template file "/home/dynamicguy/public_html/gpweb/gp/../src/Application/GpBundle/Resources/views/Gp/header.php" (renderer: php)
+2010-07-31T21:38:56+06:00 INFO: Loaded template file "/home/dynamicguy/public_html/gpweb/gp/../src/Application/GpBundle/Resources/views/Gp/messages.php" (renderer: php)
+2010-07-31T21:38:56+06:00 INFO: Loaded template file "/home/dynamicguy/public_html/gpweb/gp/../src/Application/GpBundle/Resources/views/Gp/footer.php" (renderer: php)
+2010-07-31T21:38:56+06:00 INFO: Loaded template file "/home/dynamicguy/public_html/gpweb/gp/../src/Application/GpBundle/Resources/views//javascriptConfig.php" (renderer: php)
+2010-07-31T21:38:56+06:00 DEBUG: Notifying (filter) event "core.response" to listener "(Symfony\Components\HttpKernel\Listener\EsiFilter, filter)"
+2010-07-31T21:38:56+06:00 DEBUG: Notifying (filter) event "core.response" to listener "(Symfony\Components\HttpKernel\Listener\ResponseFilter, filter)"
+2010-07-31T21:38:56+06:00 DEBUG: Notifying (filter) event "core.response" to listener "(Symfony\Components\HttpKernel\Listener\Profiling, handle)"
+2010-07-31T21:38:56+06:00 DEBUG: Notifying (filter) event "core.response" to listener "(Symfony\Components\HttpKernel\Listener\WebDebugToolbar, handle)"
+2010-07-31T21:39:04+06:00 DEBUG: Notifying (until) event "core.request" to listener "(Symfony\Framework\FoundationBundle\Listener\RequestParser, resolve)"
+2010-07-31T21:39:04+06:00 INFO: Matched route "homepage" (parameters: array (  '_controller' => 'GpBundle:Gp:index',  '_route' => 'homepage',))
+2010-07-31T21:39:04+06:00 DEBUG: Notifying (until) event "core.load_controller" to listener "(Symfony\Framework\FoundationBundle\Listener\ControllerLoader, resolve)"
+2010-07-31T21:39:04+06:00 INFO: Using controller "Application\GpBundle\Controller\GpController::indexAction"
+2010-07-31T21:39:04+06:00 DEBUG: Listener "(Symfony\Framework\FoundationBundle\Listener\ControllerLoader, resolve)" processed the event "core.load_controller"
+2010-07-31T21:39:04+06:00 INFO: Loaded template file "/home/dynamicguy/public_html/gpweb/gp/../src/Application/GpBundle/Resources/views/Gp/index.php" (renderer: php)
+2010-07-31T21:39:04+06:00 INFO: Loaded template file "/home/dynamicguy/public_html/gpweb/gp/../src/Application/GpBundle/Resources/views//layout.php" (renderer: php)
+2010-07-31T21:39:04+06:00 INFO: Loaded template file "/home/dynamicguy/public_html/gpweb/gp/../src/Application/GpBundle/Resources/views/Gp/header.php" (renderer: php)
+2010-07-31T21:39:04+06:00 INFO: Loaded template file "/home/dynamicguy/public_html/gpweb/gp/../src/Application/GpBundle/Resources/views/Gp/messages.php" (renderer: php)
+2010-07-31T21:39:04+06:00 INFO: Loaded template file "/home/dynamicguy/public_html/gpweb/gp/../src/Application/GpBundle/Resources/views/Gp/footer.php" (renderer: php)
+2010-07-31T21:39:04+06:00 INFO: Loaded template file "/home/dynamicguy/public_html/gpweb/gp/../src/Application/GpBundle/Resources/views//javascriptConfig.php" (renderer: php)
+2010-07-31T21:39:04+06:00 DEBUG: Notifying (filter) event "core.response" to listener "(Symfony\Components\HttpKernel\Listener\EsiFilter, filter)"
+2010-07-31T21:39:04+06:00 DEBUG: Notifying (filter) event "core.response" to listener "(Symfony\Components\HttpKernel\Listener\ResponseFilter, filter)"
+2010-07-31T21:39:04+06:00 DEBUG: Notifying (filter) event "core.response" to listener "(Symfony\Components\HttpKernel\Listener\Profiling, handle)"
+2010-07-31T21:39:04+06:00 DEBUG: Notifying (filter) event "core.response" to listener "(Symfony\Components\HttpKernel\Listener\WebDebugToolbar, handle)"
+2010-07-31T21:39:45+06:00 DEBUG: Notifying (until) event "core.request" to listener "(Symfony\Framework\FoundationBundle\Listener\RequestParser, resolve)"
+2010-07-31T21:39:45+06:00 INFO: Matched route "homepage" (parameters: array (  '_controller' => 'GpBundle:Gp:index',  '_route' => 'homepage',))
+2010-07-31T21:39:45+06:00 DEBUG: Notifying (until) event "core.load_controller" to listener "(Symfony\Framework\FoundationBundle\Listener\ControllerLoader, resolve)"
+2010-07-31T21:39:45+06:00 INFO: Using controller "Application\GpBundle\Controller\GpController::indexAction"
+2010-07-31T21:39:45+06:00 DEBUG: Listener "(Symfony\Framework\FoundationBundle\Listener\ControllerLoader, resolve)" processed the event "core.load_controller"
+2010-07-31T21:39:45+06:00 INFO: Loaded template file "/home/dynamicguy/public_html/gpweb/gp/../src/Application/GpBundle/Resources/views/Gp/index.php" (renderer: php)
+2010-07-31T21:39:45+06:00 INFO: Loaded template file "/home/dynamicguy/public_html/gpweb/gp/../src/Application/GpBundle/Resources/views//layout.php" (renderer: php)
+2010-07-31T21:39:45+06:00 INFO: Loaded template file "/home/dynamicguy/public_html/gpweb/gp/../src/Application/GpBundle/Resources/views/Gp/header.php" (renderer: php)
+2010-07-31T21:39:45+06:00 INFO: Loaded template file "/home/dynamicguy/public_html/gpweb/gp/../src/Application/GpBundle/Resources/views/Gp/messages.php" (renderer: php)
+2010-07-31T21:39:45+06:00 INFO: Loaded template file "/home/dynamicguy/public_html/gpweb/gp/../src/Application/GpBundle/Resources/views/Gp/footer.php" (renderer: php)
+2010-07-31T21:39:45+06:00 INFO: Loaded template file "/home/dynamicguy/public_html/gpweb/gp/../src/Application/GpBundle/Resources/views//javascriptConfig.php" (renderer: php)
+2010-07-31T21:39:45+06:00 DEBUG: Notifying (filter) event "core.response" to listener "(Symfony\Components\HttpKernel\Listener\EsiFilter, filter)"
+2010-07-31T21:39:45+06:00 DEBUG: Notifying (filter) event "core.response" to listener "(Symfony\Components\HttpKernel\Listener\ResponseFilter, filter)"
+2010-07-31T21:39:45+06:00 DEBUG: Notifying (filter) event "core.response" to listener "(Symfony\Components\HttpKernel\Listener\Profiling, handle)"
+2010-07-31T21:39:45+06:00 DEBUG: Notifying (filter) event "core.response" to listener "(Symfony\Components\HttpKernel\Listener\WebDebugToolbar, handle)"
