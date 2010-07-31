@@ -1,0 +1,11 @@
+#main router
+homepage:
+  pattern:  /
+  defaults: { _controller: GpBundle:Gp:index }
+
+gp:
+  resource: GpBundle/Resources/config/routing.yml
+
+user:
+  resource: UserBundle/Resources/config/routing.yml
+  prefix: /user

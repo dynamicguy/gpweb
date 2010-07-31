@@ -1,0 +1,46 @@
+body
+{
+    font: normal normal normal 13.34px/normal helvetica, arial, freesans, clean, sans-serif;
+    color: #626262;
+    margin: 15px 0;
+}
+h1,h2,h3{
+    font-size: 2em;
+    font-weight:bold;
+    text-align: left;
+    padding-bottom:10px;
+    color:#0099ff;
+    text-shadow: -2px -1px 0 #ccc;
+}
+.site_title {
+    color:#1D1D1D;
+    font-family:Georgia,serif;
+    font-style:italic;
+    text-shadow:1px 1px 1px #656565;
+}
+p{margin-bottom: 10px;}
+a:link, a:visited{color: #009900}
+a:hover{color: #DF0000}
+
+#ipad-top{
+    background: #FAFAFA url(../images/bg-top.jpg) no-repeat;
+    height: 100px;
+}
+
+#ipad-bottom{
+    background: #FAFAFA url(../images/bg-bottom.jpg) no-repeat;
+    height: 120px;
+}
+
+#content-wrapper{background: #FAFAFA url(../images/bg-middle.jpg) top repeat-y;}
+#content{margin: 0 100px;background: #f4f4f4;min-height: 300px;-moz-border-radius:5px;}
+#content-body{padding:10px;margin-top: 10px}
+#footer{text-align: right;font-size: 10px;}
+.ft{padding: 10px 50px;}
+.ft a{text-decoration: none}
+
+.pad{padding: 5px}
+.padded{padding: 10px;}
+.center{text-align: center}
+.grid_6{width: 480px !important;}
+.grid_3{width: 205px !important;}

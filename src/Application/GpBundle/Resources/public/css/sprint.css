@@ -1,0 +1,199 @@
+body {
+    background: #FAFAFA url(../images/flat_background.png) top left repeat-x;
+    padding-top: 15px;
+}
+html { background: #FAFAFA; }
+
+#sprint_current {
+    border-radius:9px;
+    box-shadow:0 0 9px rgba(90, 90, 90, 0.5);
+    -moz-border-radius:9px;
+    -moz-box-shadow:0 0 9px rgba(90, 90, 90, 0.5);
+    -webkit-border-radius:9px;
+    -webkit-box-shadow:0 0 9px rgba(90, 90, 90, 0.5);
+    background:none repeat scroll 0 0 #FFFFFF;
+    border:1px solid #C4C4C4;
+    padding-top:0;
+    padding-bottom: 6px;
+    margin-left: 380px;
+    margin-right: 15px;
+}
+
+#sprintBacklog 
+{
+    font-size: 0.95em;
+    font-family:Arial,sans-serif;
+    width: 100%;
+}
+
+#sprint .titleWithActions {
+    margin-bottom: 0;
+    background: #F5F5F5;
+    background: -moz-linear-gradient(center top , #FAFAFA, #EAEAEA) repeat scroll 0 0 #EFEFEF;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FAFAFA), to(#EAEAEA));
+    border-bottom: 1px solid #C4C4C4;
+    -moz-border-radius: 8px 8px 0 0;
+    -webkit-border-radius: 8px 8px 0 0;
+    border-radius: 8px 8px 0 0;
+    font-family:Arial,sans-serif;
+    padding: 0 0 5px 0;
+    position: relative;
+}
+
+#sprint_current .titleWithActions .progression {
+    font-family:Arial,sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0 1em 0 0;
+    line-height: 45px;
+    color: #888;
+    font-size: 1.4em;
+    display: block;
+    float: none;
+    margin-left: 110px;
+}
+
+#sprint_current .titleWithActions a {
+    float: right;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: #AAA;
+    background: none;
+    line-height: 32px;
+    padding-right: 20px;
+    margin-top: 6px;
+    margin-left: 0;
+}
+
+#sprint_current .titleWithActions a:hover {
+    color: #B12822;
+}
+
+.sprintometer {
+    display: inline;
+    opacity: 0.7;
+    position: absolute;
+    top: -4px;
+    left: 0px;
+}
+
+#sprint div.quarters {
+    display: block;
+    width: 100%;
+}
+#sprint div.quarters > div
+{
+    width: 24%;
+    float: left;
+    margin: 0 0.5%;
+}
+#sprint div.headers > div
+{
+    color: #B12822;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 0;
+}
+
+#sprint div.stories {
+    min-height: 30px;
+}
+
+div.story {
+    margin: 5px 0;
+}
+
+#sprint div.project {
+    background: #fff;
+}
+
+#sprint div.project_name {
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0 0 3px #000;
+    text-align: center;
+    padding: 5px 0;
+    cursor: move;
+}
+
+#sprint div.colSide {
+    position: absolute;
+    width: 350px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 0 0 5px 0;
+    border-radius:9px;
+    box-shadow:0 0 9px rgba(90, 90, 90, 0.5);
+    -moz-border-radius:9px;
+    -moz-box-shadow:0 0 9px rgba(90, 90, 90, 0.5);
+    -webkit-border-radius:9px;
+    -webkit-box-shadow:0 0 9px rgba(90, 90, 90, 0.5);
+    border:1px solid #C4C4C4;
+}
+
+#sprint div.colSide ul.tabs {
+    background: -moz-linear-gradient(center top , #FAFAFA, #EAEAEA) repeat scroll 0 0 #EFEFEF;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FAFAFA), to(#EAEAEA));
+    border: 0;
+    padding: 5px 0 0 5px;
+    border-bottom: 1px solid #C4C4C4;
+    border-radius: 8px 8px 0 0;
+    -moz-border-radius: 8px 8px 0 0;
+    -webkit-border-radius: 8px 8px 0 0;
+}
+
+#sprint div.colSide ul.tabs li {
+    margin-left: 5px;
+}
+
+#sprint div.colSide ul.tabs span.nb_filters {
+    margin-left: 3px;
+    color: #B12822;
+    font-size: 11px;
+    vertical-align: top;
+}
+
+#sprint div.colSide a.story_new {
+    float: right;
+    width: 32px;
+    height: 32px;
+    display:block;
+    background: url(../images/add.png) top left no-repeat;
+    margin: 6px 8px 0 0;
+}
+
+#timeline {
+    padding: 0;
+}
+
+#backlog {
+    padding: 5px 0 0 0;
+    font-size: 13px;
+}
+
+#backlog .stories {
+    min-height: 5px;
+}
+
+#backlog .story {
+    margin: 5px;
+}
+
+#filters label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+#filters label span.points {
+    float: right;
+    color: #999;
+}
+
+.story_placeholder {
+    background: #FFE45C;
+    border: 1px solid #FED22F;
+    height: 1.5em;
+}
