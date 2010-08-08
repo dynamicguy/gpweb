@@ -21,7 +21,7 @@
         <div class="container_12" id="content-wrapper">
             <div id="content">
                 <div class="ui-widget-header pad center">
-                    <span class="site_title"><?php $view->slots->output('title', 'Welcome') ?> - GP World<span>
+                    <span class="site_title"><?php $view->slots->output('title', 'Welcome') ?> - GP World</span>
                 </div>
                 <div id="content-body">
                 <?php echo $view->render('GpBundle:Gp:messages') ?>

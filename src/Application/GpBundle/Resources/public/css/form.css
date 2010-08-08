@@ -122,18 +122,15 @@ input.input-medium, select.select-medium {
 }
 
 .stylized input.btn{
-    clear:both;
-    @margin-left:0px;
-    margin-top: 10px;
-    font-family: Helvetica, Arial, sans-serif;
-	font-size: 12px;
-	margin: 0;
-	color: #fff;
-	font-weight: bold;
-	background: #000;
-	border: none;
-	padding: 0.3em 20px;
-	cursor: pointer;
+    outline:1px outset #999;
+    border:1px solid #fff;
+    background-color:#222;
+    color:#fff;
+    height:24px;
+    -moz-border-radius:4px;
+    -moz-outline-radius:4px;
+    cursor:pointer;
+    font-size:11px;
     width:auto;
 }
 
