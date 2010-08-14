@@ -1,5 +1,0 @@
-#GpBundle router
-gp:
-    pattern:  /gp/:name
-    defaults: { _controller: GpBundle:Gp:index }
-    
