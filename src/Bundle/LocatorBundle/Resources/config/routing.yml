@@ -1,0 +1,4 @@
+#LocatorBundle rout
+find:
+  pattern: /mobile
+  defaults: { _controller: LocatorBundle:Locator:index }

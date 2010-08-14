@@ -1,0 +1,33 @@
+imports:
+    - { resource: config.yml }
+
+zend.logger:
+    priority: debug
+    path:     %kernel.root_dir%/logs/%kernel.environment%.log
+
+web.config:
+  validation:
+    enabled: true
+  toolbar: true
+
+doctrine.dbal:
+  default_connection: default
+  connections:
+    default:
+      driver:   PDOMySql
+      dbname:   gp
+      user:     root
+      password: f
+      host: localhost
+      port: ~
+      event_manager_class: Doctrine\Common\EventManager
+      configuration_class: Doctrine\DBAL\Configuration
+      wrapper_class: ~
+      options: []
+
+doctrine.orm:
+  default_entity_manager: default
+  cache_driver: array # array, apc, memcache, xcache
+  entity_managers:
+    default:
+      connection: default

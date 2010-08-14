@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="true"
+         stopOnFailure="false"
+         syntaxCheck="true"
+         bootstrap="../src/autoload.php"
+>
+    <testsuites>
+        <testsuite name="GPWeb Test Suite">
+            <directory>../src/Application/*/Tests</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist>
+            <directory>../src/Application</directory>
+            <directory>../src/Bundle</directory>
+            <exclude>
+                <directory>../src/Application/*/Resources</directory>
+                <directory>../src/Application/*/Tests</directory>
+                <directory>../src/Bundle/*/Resources</directory>
+                <directory>../src/Bundle/*/Tests</directory>
+            </exclude>
+
+        </whitelist>
+    </filter>
+</phpunit>

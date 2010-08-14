@@ -1,0 +1,4 @@
+#ChargeBundle rout
+donate:
+  pattern: /donate
+  defaults: { _controller: ChargeBundle:Charge:index }

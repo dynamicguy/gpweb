@@ -1,0 +1,38 @@
+parameters:
+  kernel.include_core_classes: false
+
+swift.mailer:
+  transport:  smtp
+  encryption: ssl
+  auth_mode:  login
+  host:       smtp.gmail.com
+  username:   test@dynamicguy.com
+  password:   owey my password!
+
+kernel.config:
+  charset:              UTF-8
+  error_handler_level:  null
+  session:
+    lifetime: 2592000 # one month
+web.user: ~
+user.user: ~
+web.config:
+  validation:
+    enabled: true
+  router: { resource: "%kernel.root_dir%/config/routing.yml" }
+     
+web.templating: ~
+
+doctrine.dbal:
+  driver:   PDOMySql
+  dbname:   gp_live
+  user:     root
+  password: f
+
+doctrine.orm:
+  default_entity_manager: default
+  cache_driver: apc # array, apc, memcache, xcache
+  entity_managers:
+    default:
+      connection: default
+

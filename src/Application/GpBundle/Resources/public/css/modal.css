@@ -1,0 +1,89 @@
+div.ui-dialog {
+  box-shadow: 0 0 10px #222;
+  -moz-box-shadow: 0 0 10px #222;
+  -webkit-box-shadow: 0 0 13px #444;
+  -moz-border-radius: 4px;
+}
+
+div.ui-dialog div.ui-dialog-content {
+    padding: 0;
+}
+
+div.ui-dialog-content .story_title {
+  padding: 1em;
+  margin: 0;
+  background: -moz-linear-gradient(center top , #EAEAEA, #CACACA) repeat scroll 0 0 #EFEFEF;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EAEAEA), to(#CACACA));
+  font-family:Arial,sans-serif;
+  font-weight: bold;
+  font-size: 1.1em;
+  border-bottom: 1px solid #aaa;
+}
+
+div.ui-dialog-content .story_actions {
+    float: right;
+}
+
+div.ui-dialog-content .story_actions a {
+  float: right;
+  margin: 0 0 0 0.8em;
+  color: #888;
+  font-size: 0.8em;
+  text-decoration: none;
+}
+
+div.ui-dialog-content .story_infos {
+    float: left;
+    color: #888;
+    font-size: 0.8em;
+}
+
+div.ui-dialog-content .story_body {
+  padding: 1em;
+  display: block;
+}
+
+div.ui-dialog-content .timeline {
+    background: #FFFFFF;
+    border-top: 1px solid #aaa;
+    max-height: 200px;
+    overflow: auto;
+}
+
+div.ui-dialog-content .timeline .tentry {
+    padding: 0.5em 0;
+}
+
+div.ui-dialog-content .line {
+    width: 100%;
+    margin: 1em 0;
+    display: block;
+    position: relative;
+}
+div.ui-dialog-content label {
+    float: left;
+    display: block;
+    width: 15%;
+    text-align:right;
+    padding-right: 1em;
+}
+div.ui-dialog-content textarea {
+    width: 78%;
+    height: 100px;
+}
+div.ui-dialog-content .line.name input {
+    width: 78%;
+}
+div.ui-dialog-content .line.points input {
+    width: 3em;
+}
+div.ui-dialog-content div.actions {
+    display: block;
+    margin: 0 1em 1em 1em;
+}
+div.ui-dialog-content div.actions a.cancel {
+    float: left;
+}
+div.ui-dialog-content div.actions input {
+    float: right;
+}

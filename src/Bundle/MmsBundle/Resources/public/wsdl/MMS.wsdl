@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s3="http://GP.ADP.BizTalk.MMS.SendMMSRequest" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:s5="http://GP.ADP.BizTalk.MMS.MMSStatusRequest" xmlns:s6="http://GP.ADP.BizTalk.MMS.MMSStatusResponse" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.grameenphone.com/playground" xmlns:s1="http://GP.ADP.BizTalk.MMS.MMSReceiveRequest" xmlns:s2="http://GP.ADP.BizTalk.MMS.MMSReceiveResponse" xmlns:s4="http://GP.ADP.BizTalk.MMS.SendMMSResponse" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" targetNamespace="http://www.grameenphone.com/playground" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">BizTalk assembly "GP.ADP.BizTalk.MMS.Orchestration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8f26369b0e230bd9" published web service.</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.grameenphone.com/playground">
+      <s:import namespace="http://GP.ADP.BizTalk.MMS.MMSReceiveRequest"/>
+      <s:import namespace="http://GP.ADP.BizTalk.MMS.MMSReceiveResponse"/>
+      <s:import namespace="http://GP.ADP.BizTalk.MMS.SendMMSRequest"/>
+      <s:import namespace="http://GP.ADP.BizTalk.MMS.SendMMSResponse"/>
+      <s:import namespace="http://GP.ADP.BizTalk.MMS.MMSStatusRequest"/>
+      <s:import namespace="http://GP.ADP.BizTalk.MMS.MMSStatusResponse"/>
+      <s:element name="getReceivedMMS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" ref="s1:ReceiveMMSRequest"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getReceivedMMSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" ref="s2:ReceiveMMSResponse"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="sendMMS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" ref="s3:SendMMSRequest"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="sendMMSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" ref="s4:SendMMSResponse"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMMSDeliveryStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" ref="s5:MMSStatusRequest.xsd"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMMSDeliveryStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" ref="s6:MMSStatusResponse.xsd"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://GP.ADP.BizTalk.MMS.MMSReceiveRequest">
+      <s:element name="ReceiveMMSRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="registrationID" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="password" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="mmsPort" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="msgID" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://GP.ADP.BizTalk.MMS.MMSReceiveResponse">
+      <s:element name="ReceiveMMSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="msgID" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="senderMSISDN" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="timeStamp" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="sourcePort" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="msgSubject" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="msgBody" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="contentFileName" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="msgContent" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://GP.ADP.BizTalk.MMS.SendMMSRequest">
+      <s:element name="SendMMSRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="registrationID" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="password" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="sourceMsisdn" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="destinationMsisdn" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="mmsPort" type="s:string"/>
+            <s:element minOccurs="1" maxOccurs="1" form="unqualified" name="charge" type="s:double"/>
+            <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="chargedParty" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="contentArea" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="msgSubject" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="msgBody" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="contentFileName" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="msgContent" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://GP.ADP.BizTalk.MMS.SendMMSResponse">
+      <s:element name="SendMMSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="status" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="msgID" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://GP.ADP.BizTalk.MMS.MMSStatusRequest">
+      <s:element name="MMSStatusRequest.xsd">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="registrationID" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="password" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="msgID" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://GP.ADP.BizTalk.MMS.MMSStatusResponse">
+      <s:element name="MMSStatusResponse.xsd">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="deliveryStatus" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="getReceivedMMSSoapIn">
+    <wsdl:part name="parameters" element="tns:getReceivedMMS"/>
+  </wsdl:message>
+  <wsdl:message name="getReceivedMMSSoapOut">
+    <wsdl:part name="parameters" element="tns:getReceivedMMSResponse"/>
+  </wsdl:message>
+  <wsdl:message name="sendMMSSoapIn">
+    <wsdl:part name="parameters" element="tns:sendMMS"/>
+  </wsdl:message>
+  <wsdl:message name="sendMMSSoapOut">
+    <wsdl:part name="parameters" element="tns:sendMMSResponse"/>
+  </wsdl:message>
+  <wsdl:message name="getMMSDeliveryStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:getMMSDeliveryStatus"/>
+  </wsdl:message>
+  <wsdl:message name="getMMSDeliveryStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:getMMSDeliveryStatusResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="WebService_GP_ADP_BizTalk_MMS_OrchestrationSoap">
+    <wsdl:operation name="getReceivedMMS">
+      <wsdl:input message="tns:getReceivedMMSSoapIn"/>
+      <wsdl:output message="tns:getReceivedMMSSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="sendMMS">
+      <wsdl:input message="tns:sendMMSSoapIn"/>
+      <wsdl:output message="tns:sendMMSSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="getMMSDeliveryStatus">
+      <wsdl:input message="tns:getMMSDeliveryStatusSoapIn"/>
+      <wsdl:output message="tns:getMMSDeliveryStatusSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebService_GP_ADP_BizTalk_MMS_OrchestrationSoap" type="tns:WebService_GP_ADP_BizTalk_MMS_OrchestrationSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getReceivedMMS">
+      <soap:operation soapAction="http://www.grameenphone.com/playground/WebService_GP_ADP_BizTalk_MMS_Orchestration/getReceivedMMS" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendMMS">
+      <soap:operation soapAction="http://www.grameenphone.com/playground/WebService_GP_ADP_BizTalk_MMS_Orchestration/sendMMS" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMMSDeliveryStatus">
+      <soap:operation soapAction="http://www.grameenphone.com/playground/WebService_GP_ADP_BizTalk_MMS_Orchestration/getMMSDeliveryStatus" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebService_GP_ADP_BizTalk_MMS_OrchestrationSoap12" type="tns:WebService_GP_ADP_BizTalk_MMS_OrchestrationSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getReceivedMMS">
+      <soap12:operation soapAction="http://www.grameenphone.com/playground/WebService_GP_ADP_BizTalk_MMS_Orchestration/getReceivedMMS" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendMMS">
+      <soap12:operation soapAction="http://www.grameenphone.com/playground/WebService_GP_ADP_BizTalk_MMS_Orchestration/sendMMS" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMMSDeliveryStatus">
+      <soap12:operation soapAction="http://www.grameenphone.com/playground/WebService_GP_ADP_BizTalk_MMS_Orchestration/getMMSDeliveryStatus" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebService_GP_ADP_BizTalk_MMS_Orchestration">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">BizTalk assembly "GP.ADP.BizTalk.MMS.Orchestration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8f26369b0e230bd9" published web service.</wsdl:documentation>
+    <wsdl:port name="WebService_GP_ADP_BizTalk_MMS_OrchestrationSoap" binding="tns:WebService_GP_ADP_BizTalk_MMS_OrchestrationSoap">
+      <soap:address location="https://www.aloashbei.com.bd/API/GP.ADP.BizTalk.MMS.Orchestration/WebService_GP_ADP_BizTalk_MMS_Orchestration.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="WebService_GP_ADP_BizTalk_MMS_OrchestrationSoap12" binding="tns:WebService_GP_ADP_BizTalk_MMS_OrchestrationSoap12">
+      <soap12:address location="https://www.aloashbei.com.bd/API/GP.ADP.BizTalk.MMS.Orchestration/WebService_GP_ADP_BizTalk_MMS_Orchestration.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

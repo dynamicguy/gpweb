@@ -1,0 +1,26 @@
+#main router
+homepage:
+  pattern:  /
+  defaults: { _controller: GpBundle:Gp:index }
+
+gp:
+  resource: GpBundle/Resources/config/routing.yml
+
+user:
+  resource: UserBundle/Resources/config/routing.yml
+  prefix: /user
+
+sms:
+  resource: SmsBundle/Resources/config/routing.yml
+  prefix: /sms
+
+mms:
+  resource: MmsBundle/Resources/config/routing.yml
+  prefix: /mms
+
+locator:
+  resource: LocatorBundle/Resources/config/routing.yml
+  prefix: /find
+
+charge:
+  resource: ChargeBundle/Resources/config/routing.yml

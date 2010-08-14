@@ -1,0 +1,4 @@
+#SmsBundle rout
+smshome:
+  pattern: /home
+  defaults: { _controller: SmsBundle:Sms:index }

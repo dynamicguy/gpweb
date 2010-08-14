@@ -1,0 +1,20 @@
+# UserBundle rout
+list:
+  pattern:  /list
+  defaults: { _controller: UserBundle:User:index }
+  
+login:
+  pattern:  /login
+  defaults: { _controller: UserBundle:User:login }
+
+userHome:
+  pattern:  /home
+  defaults: { _controller: UserBundle:User:home }
+
+logout:
+  pattern:  /logout
+  defaults: { _controller: UserBundle:User:logout }
+
+register:
+  pattern: /register
+  defaults: { _controller: UserBundle:User:register }

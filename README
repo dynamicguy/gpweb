@@ -1,0 +1,22 @@
+README
+======
+
+What is GP Web?
+----------------
+
+GP Web is a PHP 5.3 full-stack web application that is specially designed for 
+availing all features from Grameen Phone Alo Ashbei API.
+It is written with speed and flexibility in mind. It is built on Symfony2 and
+Doctrine2 as ORM. It is fully unit tested, the code coverage is added.
+
+Requirements
+------------
+
+GP Web is only supported on PHP 5.3.2 and up. To check the compatibility of
+your environment with GP Web, you can run the `web/check.php` script, bundled
+with this sandbox.
+
+Documentation
+-------------
+
+GP Web is still in the early stages of development.

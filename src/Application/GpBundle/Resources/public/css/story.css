@@ -1,0 +1,99 @@
+ol.stories
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.story_id
+{
+    width: 50px;
+    display: block;
+    float: left;
+    opacity: 0.5;
+}
+
+.story_project
+{
+    padding: 1px 5px;
+    border: 2px solid #444;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    margin-left: 5px;
+    font-size:0.8em;
+}
+
+.story_project a
+{
+    color: #444;
+    text-decoration: none;
+}
+
+.col
+{
+    width: 47.5%;
+}
+
+.col_left
+{
+    float: left;
+}
+
+.col_right
+{
+    float: right;
+}
+
+#scheduling {
+    margin: 0 15px;
+}
+
+#scheduling li.story
+{
+    font-size: 1em;
+}
+
+.story {
+    padding: 3px 5px;
+    border: 1px solid #E0E0E0;
+    background: -moz-linear-gradient(center top , #FAFAFA, #E6E6E6) repeat scroll 0 0 #EFEFEF;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FAFAFA), to(#E6E6E6));
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    color: #333;
+    cursor: pointer;
+    position: relative;
+}
+.story:hover {
+    background: -moz-linear-gradient(center top , #FAFAFA, #F0CDCA) repeat scroll 0 0 #EFEFEF;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FAFAFA), to(#F0CDCA));
+}
+
+.story a {
+    text-decoration: none;
+}
+
+.story_points {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    font-size: 0.9em;
+    background: #BBB;
+    width: 14px;
+    text-align: center;
+    padding: 2px 3px;
+    font-weight: bold;
+    border-radius: 9px;
+    -moz-border-radius: 9px;
+    -webkit-border-radius: 9px;
+    color: #fff;
+}
+
+.story_domain_icon {
+    vertical-align: middle;
+}
+
+.story_object .story_points {
+    cursor: pointer;
+}

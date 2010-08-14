@@ -1,0 +1,104 @@
+body
+{
+    font: normal normal normal 18px/normal "Futura","Futura Std",FuturaStd-Medium,"Avant Garde","Avant Garde Std",AvantGardeStd-Regular,"Century Gothic","Century Gothic Std",CenturyGothicStd-Regular,"Twentieth Century","Twentieth Century Std",TwentiethCenturyStd-Regular,Corbel,"Lucida Sans Regular","Trebuchet MS",Helvetica,sans-serif, clean;
+    color: #321E1E;
+    margin: 15px 0;
+}
+h1,h2,h3{
+    font-size: 1.25em;
+    font-weight:bold;
+    text-align: left;
+    padding-bottom:10px;
+    color: #321E1E;
+    text-shadow: -2px -1px 0 #ccc;
+}
+.notice{background:none repeat scroll 0 0 #FFED76 !important;}
+.ui-state-success{
+    background:none repeat scroll 0 0 green;
+    color:white;
+    padding:5px 10px;
+}
+strong{font-weight: bold;}
+.site_title {
+    color:#1D1D1D;
+    font-family: 'Times New Roman',Georgia,serif;
+    font-style:italic;
+    text-shadow:1px 1px 1px #656565;
+    font-weight: normal;
+    font-size: 0.7em;
+}
+p{margin-bottom: 10px;}
+a{outline: 0 none;}
+a:link,
+a:visited{
+    color: #be3c14;
+    text-decoration: none;
+}
+a:focus,
+a:hover,
+a:active{
+    color: #FF5C00 !important;
+    text-stroke: 0 1px 1px green;
+}
+
+
+#ipad-top{
+    background: #FAFAFA url(../images/bg-top.jpg) no-repeat;
+    height: 100px;
+}
+
+#ipad-bottom{
+    background: #FAFAFA url(../images/bg-bottom.jpg) no-repeat;
+    height: 120px;
+}
+#content-wrapper{background: #FAFAFA url(../images/bg-middle.jpg) top repeat-y;}
+#content{margin: 0 100px;background: url("../images/bg-400-paper.jpg") repeat scroll 0 0 #D8DCCE;-moz-border-radius:5px;display: block;line-height: 1.5;}
+#content-body{padding:10px;margin-top: 0px;overflow: hidden;}
+#footer{text-align: right;font-size: 10px;}
+.ft{padding: 10px 50px;}
+.ft a{text-decoration: none}
+
+.pad{padding: 5px}
+.padded{padding: 10px;}
+.center{text-align: center}
+.grid_6{width: 480px !important;}
+.grid_3{width: 205px !important;}
+ul#home-icons li{float: left;margin-right: 22px;text-align: center;margin-bottom: 20px;}
+#foot{padding: 20px;}
+ul#foot-icons li{display: inline;margin: 2px 10px;}
+.large.btn{
+    font-size:14px;
+    padding:8px 19px 9px;
+    color: #FFFFFF;
+}
+.small.btn{font-size: 10px;color: #FFFFFF;}
+.btn{
+    -moz-border-radius:5px 5px 5px 5px;
+    -moz-box-shadow:0 1px 3px rgba(0, 0, 0, 0.25);
+    background:url("../images/overlay-button.png") repeat-x scroll 0 0 #222222;
+    border-bottom:1px solid rgba(0, 0, 0, 0.25);
+    color:#FFFFFF;
+    cursor:pointer;
+    display:inline-block;
+    font-size:13px;
+    font-weight:bold;
+    line-height:1;
+    overflow:visible;
+    padding:5px 15px 6px;
+    position:relative;
+    text-decoration:none;
+    text-shadow:0 -1px 1px rgba(0, 0, 0, 0.25);
+    width:auto;
+}
+.super{
+    -moz-border-radius:18px 18px 18px 18px;
+    background-position:0 0;
+    padding:6px 17px 8px;
+}
+.super.btn{
+    background-image: url("../images/36px-blended.png");
+    border-color:rgba(0, 0, 0, 0.25) rgba(0, 0, 0, 0.25) rgba(0, 0, 0, 0.35);
+    border-style:solid;
+    border-width:1px;
+}
+#foot-icons{text-align: center}

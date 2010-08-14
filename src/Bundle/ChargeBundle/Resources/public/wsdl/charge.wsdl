@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.grameenphone.com/playground" xmlns:s1="http://GP.ADP.BizTalk.Charging.Charge" xmlns:s2="http://GP.ADP.BizTalk.Charging.ChargeResponse" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" targetNamespace="http://www.grameenphone.com/playground" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">BizTalk assembly "GP.ADP.BizTalk.Charging.Orchestration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=857f0795a5be2a04" published web service.</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.grameenphone.com/playground">
+      <s:import namespace="http://GP.ADP.BizTalk.Charging.Charge"/>
+      <s:import namespace="http://GP.ADP.BizTalk.Charging.ChargeResponse"/>
+      <s:element name="charge">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" ref="s1:ChargeRequest"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="chargeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" ref="s2:ChargeResponse"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://GP.ADP.BizTalk.Charging.Charge">
+      <s:element name="ChargeRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="registrationID" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="password" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="msisdn" type="s:string"/>
+            <s:element minOccurs="1" maxOccurs="1" form="unqualified" name="amount" type="s:double"/>
+            <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="contentArea" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="contentDesc" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="contentCode" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="deliveryCode" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://GP.ADP.BizTalk.Charging.ChargeResponse">
+      <s:element name="ChargeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="status" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="chargeSoapIn">
+    <wsdl:part name="parameters" element="tns:charge"/>
+  </wsdl:message>
+  <wsdl:message name="chargeSoapOut">
+    <wsdl:part name="parameters" element="tns:chargeResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="WebService_GP_ADP_BizTalk_Charging_OrchestrationSoap">
+    <wsdl:operation name="charge">
+      <wsdl:input message="tns:chargeSoapIn"/>
+      <wsdl:output message="tns:chargeSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="WebService_GP_ADP_BizTalk_Charging_OrchestrationHttpGet"/>
+  <wsdl:portType name="WebService_GP_ADP_BizTalk_Charging_OrchestrationHttpPost"/>
+  <wsdl:binding name="WebService_GP_ADP_BizTalk_Charging_OrchestrationSoap" type="tns:WebService_GP_ADP_BizTalk_Charging_OrchestrationSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="charge">
+      <soap:operation soapAction="http://www.grameenphone.com/playground/WebService_GP_ADP_BizTalk_Charging_Orchestration/charge" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebService_GP_ADP_BizTalk_Charging_OrchestrationSoap12" type="tns:WebService_GP_ADP_BizTalk_Charging_OrchestrationSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="charge">
+      <soap12:operation soapAction="http://www.grameenphone.com/playground/WebService_GP_ADP_BizTalk_Charging_Orchestration/charge" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebService_GP_ADP_BizTalk_Charging_OrchestrationHttpGet" type="tns:WebService_GP_ADP_BizTalk_Charging_OrchestrationHttpGet">
+    <http:binding verb="GET"/>
+  </wsdl:binding>
+  <wsdl:binding name="WebService_GP_ADP_BizTalk_Charging_OrchestrationHttpPost" type="tns:WebService_GP_ADP_BizTalk_Charging_OrchestrationHttpPost">
+    <http:binding verb="POST"/>
+  </wsdl:binding>
+  <wsdl:service name="WebService_GP_ADP_BizTalk_Charging_Orchestration">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">BizTalk assembly "GP.ADP.BizTalk.Charging.Orchestration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=857f0795a5be2a04" published web service.</wsdl:documentation>
+    <wsdl:port name="WebService_GP_ADP_BizTalk_Charging_OrchestrationSoap" binding="tns:WebService_GP_ADP_BizTalk_Charging_OrchestrationSoap">
+      <soap:address location="https://www.aloashbei.com.bd/API/GP.ADP.BizTalk.Charging.Orchestration/WebService_GP_ADP_BizTalk_Charging_Orchestration.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="WebService_GP_ADP_BizTalk_Charging_OrchestrationSoap12" binding="tns:WebService_GP_ADP_BizTalk_Charging_OrchestrationSoap12">
+      <soap12:address location="https://www.aloashbei.com.bd/API/GP.ADP.BizTalk.Charging.Orchestration/WebService_GP_ADP_BizTalk_Charging_Orchestration.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="WebService_GP_ADP_BizTalk_Charging_OrchestrationHttpGet" binding="tns:WebService_GP_ADP_BizTalk_Charging_OrchestrationHttpGet">
+      <http:address location="https://www.aloashbei.com.bd/API/GP.ADP.BizTalk.Charging.Orchestration/WebService_GP_ADP_BizTalk_Charging_Orchestration.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="WebService_GP_ADP_BizTalk_Charging_OrchestrationHttpPost" binding="tns:WebService_GP_ADP_BizTalk_Charging_OrchestrationHttpPost">
+      <http:address location="https://www.aloashbei.com.bd/API/GP.ADP.BizTalk.Charging.Orchestration/WebService_GP_ADP_BizTalk_Charging_Orchestration.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

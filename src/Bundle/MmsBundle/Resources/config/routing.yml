@@ -1,0 +1,4 @@
+# MmsBundle rout
+mmshome:
+  pattern:  /home
+  defaults: { _controller: MmsBundle:Mms:index }
